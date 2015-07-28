@@ -1,0 +1,28 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+
+        Archive Filename: DocBookFrameworkForOS2-1-0-0.WPI
+       Short Description: A bundle of programs to manipulate and convert XML DocBook files.
+        Long Description: The framework contains the latest DocBook DTD, XSL stylesheets, XSLT processor Saxon, formatting objects processor FOP, and Rexx scripts that launch the converters and set up the environment. Also contains scripts for XFC and XEP. Currently 14 output formats are available.
+
+      Proposed directory
+           for placement: /pub/os2/apps/wp/convert
+
+               Your name: Jarda KACER
+           Email address: jarda (at) kacer.biz
+    Program contact name: (same)
+   Program contact email: (same)
+             Program URL: http://www.kacer.biz/os2/docbook-framework
+
+      Would you like the
+   contact email address
+    included in listings? yes
+
+Operating System/Version: Java
+ Additional requirements: Rexx, WarpIN
+
+                Replaces: (none)
+
+
+
+

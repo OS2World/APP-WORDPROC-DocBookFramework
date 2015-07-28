@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+<!--
+	Replace every occurence of "MyDocBookInstallDir" with the absolute path
+	of your DocBook Framework installation, e.g. "D:/SW/DocBookFramework".
+	Future versions will modify this during installation.
+-->
+
+<rewriteURI
+	uriStartString="http://docbook.sourceforge.net/release/xsl/current/" 
+	rewritePrefix="file:///MyDocBookInstallDir/XSL/"/>
+
+<nextCatalog catalog="file:///MyDocBookInstallDir/DTD/catalog.xml"/>
+
+
+</catalog>

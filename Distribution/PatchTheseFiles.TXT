@@ -1,0 +1,12 @@
+Please wait a minute before using the framework and edit the following files:
+
+...\catalog.xml
+...\SW\Saxon\CatalogManager.properties
+...\SW\FOP\conf\userconfig.xml.1, if you use it -- see \SW\FOP\fonts\ReadMe.TXT why you might want to use it
+
+In every file, replace all occurences of "MyDocBookInstallDir" with the
+absolute path of the framework's root directory, e.g. "D:/SW/DocBookFramework".
+Yes, use forward slashes, not backward slashes that are normally used in OS/2.
+In future versions of the framework, this will be done automatically during
+installation.
+

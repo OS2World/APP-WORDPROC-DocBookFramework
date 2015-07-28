@@ -1,0 +1,49 @@
+DocBook
+-------
+
+http://nwalsh.com/docbook/index.html
+http://sourceforge.net/projects/docbook
+http://www.docbook.org/
+http://www.docbook.cz/
+http://www.kosek.cz/
+http://www.oasis-open.org/docbook/
+http://www.sagehill.net/docbookxsl/
+
+
+Saxon
+-----
+
+http://saxon.sourceforge.net/
+http://sourceforge.net/projects/saxon
+http://www.saxonica.com/
+
+
+FOP - Formatting Objects Processor
+----------------------------------
+
+http://xmlgraphics.apache.org/fop/
+
+
+XEP - RenderX FO Processor
+--------------------------
+
+http://www.renderx.com/tools/xep.html
+
+
+XFC - XMLmind FO Converter
+--------------------------
+
+http://www.xmlmind.com/foconverter/
+
+
+XXE - XMLmind XML Editor
+------------------------
+
+http://www.xmlmind.com/xmleditor/
+
+
+jEdit
+-----
+
+http://www.jedit.org
+

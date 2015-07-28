@@ -1,0 +1,126 @@
+<html><head><title>SAXON: Conditions of Use</title></head>
+
+<body leftmargin="150" bgcolor="#ddeeff"><font face="Arial, Helvetica, sans-serif">
+</font><div align="right"><font face="Arial, Helvetica, sans-serif"><a href="http://saxon.sourceforge.net/saxon6.5.4/index.html">SAXON home page</a></font></div>
+<h1><font face="Arial, Helvetica, sans-serif"><big><font color="#ff0080">SAXON: Conditions of Use</font></big></font></h1>
+
+
+<h2><font face="Arial, Helvetica, sans-serif">Saxon</font></h2>
+
+<p><font face="Arial, Helvetica, sans-serif">The contents of the downloaded file (saxon.zip), with the exception of the
+ Ælfred parser (see below),
+ are subject to the Mozilla Public License Version 1.0
+(the "License"); you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ <a href="http://www.mozilla.org/MPL/">http://www.mozilla.org/MPL/</a></font></p>
+
+<p><font face="Arial, Helvetica, sans-serif">Software distributed under the License is distributed on an "AS IS" basis,
+ WITHOUT WARRANTY OF ANY KIND, either express or implied.
+  See the License for the specific language governing rights and limitations under the License.</font></p><p><font face="Arial, Helvetica, sans-serif"> 
+
+</font></p><p><font face="Arial, Helvetica, sans-serif">The Original Code of SAXON comprises all those components which are not explicitly attributed
+ to other parties. It does not include the Ælfred parser, which is redistributed under
+ the licence described below.</font></p><font face="Arial, Helvetica, sans-serif"> 
+
+</font><p><font face="Arial, Helvetica, sans-serif">The Initial Developer of the Original Code was Michael Kay. 
+Individual modules identified as being created by James Clark, David Megginson, or John Cowan include
+ separate IPR notices. All Rights Reserved.</font></p><font face="Arial, Helvetica, sans-serif"> 
+
+</font><p><font face="Arial, Helvetica, sans-serif"><small><i>Until January 2001 Michael Kay worked for International Computers Limited (ICL, now part
+of Fujitsu), and from February 2001 to January 2004 he worked for Software AG. These two companies
+both sponsored the development of Saxon and authorised its release under this license, but are not
+themselves parties to the license. Michael Kay now runs his own company, Saxonica, which has taken
+over all responsibility for Saxon development and support.</i></small> </font></p>
+
+<p><font face="Arial, Helvetica, sans-serif"><small><i>For reasons of continuity,
+the icl.com domain name is retained in package names and namespace URIs with the tacit
+consent of ICL, but this should not be taken to imply any ongoing ICL involvement.</i></small></font></p>
+
+<p><font face="Arial, Helvetica, sans-serif">If you produce a product that includes or requires SAXON, please refer to it as
+"The SAXON XSLT Processor from Michael Kay", and include the URL of the
+home page, which is at
+<a href="http://saxon.sourceforge.net/">http://saxon.sourceforge.net/</a>.</font></p>
+
+<p><font face="Arial, Helvetica, sans-serif">There is no guarantee of technical support, though I am usually able to answer enquiries
+within a few days. Please subscribe to the mailing list available at
+ <a href="http://lists.sourceforge.net/lists/listinfo/saxon-help">
+http://lists.sourceforge.net/lists/listinfo/saxon-help</a> and raise any enquiries there. 
+Also check the Saxon project pages on sourceforge for details of known errors; all bugs are
+listed there as soon as I have sufficient evidence to describe the nature of the problem.</font></p>
+<hr>
+
+<h2><font face="Arial, Helvetica, sans-serif">Ælfred</font></h2>
+
+<p><font face="Arial, Helvetica, sans-serif">Included in the Saxon distribution is a modified version of the Ælfred XML parser 
+originally developed by David Megginson at Microstar (no longer in existence).
+ I have taken the relevant part of
+ <a href="mailto:david-b@pacbell.net">David Brownell</a>'s
+ <a href="http://home.pacbell.net/david-b/xml/">Ælfred2</a> distribution, repackaged it,
+  and fixed a few bugs. All changes are clearly documented in the source code.</font></p>
+
+<p><font face="Arial, Helvetica, sans-serif">This is distributed under the terms of Microstar's terms and conditions, which are as follows:</font></p>
+
+<table><tbody><tr><td width="100"></td><td>
+<p>AElfred, Version 1.2<br>
+Microstar's Java-Based XML Parser<br>
+Copyright (c) 1997, 1998 by Microstar Software Ltd.<br>
+Home Page: http://www.microstar.com/XML/</p>
+
+<p>AElfred is free for both commercial and non-commercial use and
+redistribution, provided that Microstar's copyright and disclaimer are
+retained intact.  You are free to modify AElfred for your own use and
+to redistribute AElfred with your modifications, provided that the
+modifications are clearly documented.</p>
+
+
+<p><u>DISCLAIMER</u></p>
+
+
+<p>This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+merchantability or fitness for a particular purpose.  Please use it AT
+YOUR OWN RISK.</p>
+
+
+
+</td><td width="100"></td></tr></tbody></table>
+
+<p><font face="Arial, Helvetica, sans-serif">David Brownell added the following statement: </font></p>
+<code></code><pre>
+<font face="Arial, Helvetica, sans-serif">/*
+ * Copyright (c) 1999-2000 by David Brownell.  All Rights Reserved.
+ *
+ * This program is open source software; you may use, copy, modify, and
+ * redistribute it under the terms of the LICENSE with which it was
+ * originally distributed.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * LICENSE for more details.
+ */
+</font></pre><font face="Arial, Helvetica, sans-serif"> 
+
+</font><p><font face="Arial, Helvetica, sans-serif">The version included with Saxon is David Brownell's code of 26 Feb 2000,
+modified as follows:</font></p>
+
+<ul>
+<li><font face="Arial, Helvetica, sans-serif">Changed the package name to com.icl.saxon.aelfred to prevent any accidental confusion with the
+ original Microstar code or with David Brownell's version.</font></li>
+<li><font face="Arial, Helvetica, sans-serif">Fixed several bugs: (1) a bug in namespace handling (where an attribute xxx:name precedes the xmlns:xxx
+ declaration) (2) poor diagnostics when end of file occurs prematurely </font></li>
+<li><font face="Arial, Helvetica, sans-serif">Subsetting the code to include only the XML non-validating parser and SAX driver, with appropriate
+changes to the setFeature() and getFeature() methods.</font></li>
+<li><font face="Arial, Helvetica, sans-serif">Some further changes made by David Brownell up to June 2001 have been incorporated.</font></li>
+</ul>
+
+<hr>
+
+<p align="center"><font face="Arial, Helvetica, sans-serif">Michael H. Kay<br>
+<a href="http://www.saxonica.com/">Saxonica Limited</a><br>
+22 June 2005</font></p>
+
+
+
+
+</body></html>

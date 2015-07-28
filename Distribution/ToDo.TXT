@@ -1,0 +1,8 @@
+- Autoconfiguration during/after installation
+- Support for editors: XXE and jEdit
+- Special configuration files for Central Europe users (mainly Czech) not to have problems with accented letters
+- Conversion to LaTeX
+- Basic documentation (in DocBook :-) )
+- Maybe conversion to IPF ???
+- Include OpenJade and DSSSL syles (Does anybody need this?)
+

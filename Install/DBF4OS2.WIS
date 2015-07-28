@@ -1,0 +1,298 @@
+<WARPIN VERSION="0.9.17">
+
+<HEAD>
+<TITLE>DocBook Framework for OS/2</TITLE>
+
+<PCK INDEX=1
+     PACKAGEID="Kacer.BIZ\DocBook Framework\Base\1\0\0"
+     TARGET="$(WARPIN_DEFAULTAPPSPATH)\DBF4OS2"
+     TITLE="Base files"
+     BASE
+     SELECT
+     NODESELECT
+     LONGFILENAMES
+     CREATEOBJECT="WPFolder|DocBook Framework 1.0.0|<WP_DESKTOP>|OBJECTID=<DocBook_Folder>;"
+     CREATEOBJECT="WPProgram|Read Me|<DocBook_Folder>|EXENAME=e.exe;PARAMETERS=$(1)\ReadMe.TXT;OBJECTID=<DocBook_ReadMe>;"
+     CREATEOBJECT="WPProgram|Useful Links|<DocBook_Folder>|EXENAME=e.exe;PARAMETERS=$(1)\UsefulLinks.TXT;OBJECTID=<DocBook_UsefulLinks>;"
+     CREATEOBJECT="WPUrl|DocBook Framework Home Page|<DocBook_Folder>|URL=http://www.kacer.biz/os2/docbook-framework;OBJECTID=<DocBook_HomePage>;"
+     CONFIGSYS="SET PATH=$(1)\Scripts | ADDRIGHT">
+This package contains DocBook Framework base files. This is the only available package in version 1.0.0.
+</PCK>
+
+</HEAD>
+
+<BODY>
+
+
+<!-- **************************************************************************************************************** -->
+<PAGE INDEX=1 TYPE=README>
+<NEXTBUTTON TARGET=2>~Next</NEXTBUTTON>
+<TEXT>
+Welcome to DocBook Framework for OS/2 installation!
+
+Below is displayed basic information about the framework. Please read it carefully and then press the "Next" button.
+
+
+Select "Next" to continue.
+Select "Cancel" to abort installation.
+</TEXT>
+<README FORMAT=HTML>
+<P>
+<B>DocBook Framework for OS/2, version 1.0.0</B>
+
+<P>
+DocBook Framework for OS/2 is a bundle of programs and libraries allowing you
+to manipulate DocBook source files and convert them to various output formats.
+The framework itself does not bring any new software to you, it just groups
+free software downloaded from different places and provides Rexx scripts to
+configure and launch the software in the right way.
+
+<P>
+DocBook is a XML-based platform-independent format for books, articles,
+technical documentation, FAQ, slides, etc. Once you write your stuff in DocBook,
+you can convert it to a number of output formats, including:
+
+<UL>
+<LI>HTML
+<LI>XHTML
+<LI>HTML Help for Windows
+<LI>Java Help
+<LI>Eclipse Help
+<LI>UNIX Manual Pages
+<LI>Formatting Objects, an intermediate format between DocBook and various paged-media formats
+<LI>PCL
+<LI>PDF
+<LI>PostScript
+<LI>RTF
+<LI>SVG
+<LI>plain text
+<LI>WML (Wordprocessing Markup Language)
+</UL>
+
+<P>
+The main advantages of using DocBook are the following:
+
+<UL>
+<LI>
+DocBook is a platform-independent format. You can can edit, read and convert
+he same file on any platform. You can even change the platform right in the
+middle of editing your file, the first part can be written on Windows, the
+second one on OS/2.
+<LI>
+DocBook is XML. This means that you can use all standard tools that
+manipulate XML data, such as parsers, checkers, and converters. 
+<LI>
+DocBook is an open format. This guarantees that you will be able to read and
+manipulate your today-written article in the future.
+<LI>
+Many output formats available. Being a XML format, DocBook itself is not
+intended to be read directly by humans. Instead, many output formats can be
+generated from DocBook, including popular formats such as PDF, HTML and RTF.
+</UL>
+
+
+<P>
+<B>System Requirements</B>
+
+<P>
+The framework is a bundle of Java software, data files, and Rexx scripts.
+Therefore, you will need the following stuff installed:
+
+<UL>
+<LI>Rexx
+<LI>Java. Use Golden Code or InnoTek Java 1.4, if you can. However, IBM Java 1.3 should also work.
+<LI>WarpIN for installation/deinstallation. Since you are reading this file, you have probably installed it already.
+</UL>
+
+
+<P>
+<B>Installation and Deinstallation</B>
+
+<P>
+DocBook Framework is installed automatically using WarpIN. During installation,
+your <CODE>CONFIG.SYS</CODE> will be modified. If you don't allow WarpIN to perform the
+modification, you will have to:
+
+<UL>
+<LI>either modify <CODE>CONFIG.SYS</CODE> on your own by adding the <CODE>...\Scripts</CODE> directory to your <CODE>PATH</CODE>, or
+<LI>add the <CODE>...\Scripts</CODE> directory to your <CODE>PATH</CODE> from the command line every time you use the framework.
+</UL>
+
+<P>
+In addition, <CODE>java.exe</CODE> must be in your <CODE>PATH</CODE>. It is assumed that <CODE>PATH</CODE> already
+contains a Java <CODE>...\jre\bin</CODE> directory and no checks are performed, neither
+during installation nor during normal operation.
+
+<P>
+Before you start using the framework, take a little time to configure it. A few
+configuration files must be set up in order for the tools to operate properly.
+Please read the file <CODE>PatchTheseFiles.TXT</CODE> for more details. These changes can be
+performed automatically and future versions of the framework will contain
+a little configuration tool that will be executed during installation.
+
+<P>
+The framework can be uninstalled using WarpIN. You can also delete it manually,
+but then the WarpIN database will not be consistent with your hard disk's
+content.
+
+
+<P>
+<B>Components of the Framework</B>
+
+<P>
+The framework consists of the following components:
+
+<OL>
+<LI>DocBook DTD and ISO entities.
+<LI>DocBook XSL stylesheets that prescribe how DocBook documents should be converted into other formats.
+<LI>Saxon - XSLT processor that converts a DocBook document into another format using a XSL stylesheet.
+<LI>FOP - FO processor that converts an FO document (generated by Saxon) into a paged-media document.
+<LI>Rexx scripts that set up the environment properly before launching the programs.
+</OL>
+
+<P>
+Other software can be plugged into the framework, e.g. XFC or XEP. Rexx scripts
+for starting them are present in the distribution, but the programs could not
+be included because of their strict licenses. However, you can easily download
+them on your own and install them into the <CODE>...\SW\XFC</CODE> and <CODE>...\SW\XEP</CODE>
+directories. Look into the <CODE>UsefulLinks.TXT</CODE> file for links to the software.
+
+<P>
+Some DocBook-related programs were not included in the distribution. An example
+of such programs is OpenJade, a converter using DSSSL styles. DSSSL styles are
+older than XSL styles and their importance falls down continuously. In adition,
+OpenJade is a native program. Programs like OpenJade may be included in a future
+version if users request it.
+
+<P>
+Editors were not included either. I recommend using either jEdit or XXE. The
+latter is almost-WYSIWYG so it will probably be preferred by many users. Again,
+see the file <CODE>UsefulLinks.TXT</CODE> for an URL.
+
+
+<P>
+<B>Using the Framework</B>
+
+<P>
+The framework offers 19 Rexx scripts that you can call directly and pass them
+your DocBook file as a parameter. The scripts are as follows:
+
+<DL>
+<DD>DB2EclipseHelp.CMD
+<DT>Converts DocBook into Eclipse help.
+
+<DD>DB2FO.CMD
+<DT>Converts DocBook into Formatting Objects. Formatting objects are the starting point for paged-media formats, therefore a very important format. Look at FO2* scripts to see what you get out of formatting objects.
+
+<DD>DB2HTML.CMD
+<DT>Converts DocBook into a single HTML file.
+
+<DD>DB2HTMLChunks.CMD
+<DT>Converts DocBook into a set of HTML files, chained by links.
+
+<DD>DB2HTMLHelp.CMD
+<DT>Converts DocBook into a set of HTML files that can be compiled into a CHM file. This can be used on Windows only.
+
+<DD>DB2JavaHelp.CMD
+<DT>Converts DocBook into a set of HTML and XML files that can be packed into a JAR archive and read by a Java program.
+
+<DD>DB2ManPages.CMD
+<DT>Converts DocBook reference entries into UNIX manual pages. Not much useful on OS/2...
+
+<DD>DB2XHTML.CMD
+<DT>Converts DocBook into a single XHTML file.
+
+<DD>DB2XHTMLChunks.CMD
+<DT>Converts DocBook into a set XHTML files, chained by links.
+
+<DD>FO2MIF.CMD
+<DT>This conversion does not work yet.
+
+<DD>FO2PCL.CMD
+<DT>Converts Formatting Objects into a PCL file that can be sent to a printer.
+
+<DD>FO2PDF.CMD
+<DT>Converts Formatting Objects into a Portable Document format.
+
+<DD>FO2Printer.CMD
+<DT>Renders Formatting Objects directly onto a printer.
+
+<DD>FO2PS.CMD
+<DT>Converts Formatting Objects into PostScript.
+
+<DD>FO2RTF-UsingXFC.CMD
+<DT>Converts Formatting Objects into Rich Text Format. On OS/2, use OpenOffice to open the resulting RTF. You must install XFC on your own to be able to perform this conversion.
+
+<DD>FO2Screen.CMD
+<DT>Renders Formatting Objects on the screen.
+
+<DD>FO2SVG.CMD
+<DT>Converts Formatting Objects into Scalable Vector Graphics.
+
+<DD>FO2TXT.CMD
+<DT>Converts Formatting Objects into plain text.
+
+<DD>FO2WML-UsingXFC.CMD
+<DT>Converts Formatting Objects into Wordprocessing Markup Language. The resulting file can be opened by Microsoft Word XP and 2003 on Windows. You must install XFC on your own to be able to perform this conversion.
+</DL>
+
+<P>
+If a new XSL stylesheet appears, you can directly call the converters and
+supply them the stylesheet as a parameter. See Saxon.CMD, FOP.CMD, XFC.CMD, and
+XEP.CMD for details.
+
+
+<P>
+<B>More Information</B>
+
+<P>
+The framework's homepage is at <CODE>http://www.kacer.biz/os2/docbook-framework</CODE>.
+
+<P>
+To contact the packager, write to <CODE>jarda@kacer.biz</CODE>.
+</README>
+</PAGE>
+
+
+<!-- **************************************************************************************************************** -->
+<PAGE INDEX=2 TYPE=TEXT>
+<NEXTBUTTON TARGET=3>~Next</NEXTBUTTON>
+<TEXT>
+You can let the installation program change your CONFIG.SYS (The PATH variable should be updated.) or assure the necessary working environment by yourself. If you want to set your PATH manually, read the ReadMe.TXT file for instructions.
+
+
+Select "Next" to continue.
+Select "Cancel" to abort installation.
+</TEXT>
+</PAGE>
+
+
+<!-- **************************************************************************************************************** -->
+<PAGE INDEX=3 TYPE=CONTAINER>
+<NEXTBUTTON TARGET=4>~Next</NEXTBUTTON>
+<TEXT>
+On this page, you may deselect a package if it is already installed or change a package's target path.
+</TEXT>
+</PAGE>
+
+
+<!-- **************************************************************************************************************** -->
+<PAGE INDEX=4 TYPE=CONFIGURE>
+<NEXTBUTTON TARGET=5>~Next</NEXTBUTTON>
+<TEXT>
+Please check the boxes below if you want to configure your system automatically. Otherwise you will have to set up you system manually.
+</TEXT>
+</PAGE>
+
+
+<!-- **************************************************************************************************************** -->
+<PAGE INDEX=5 TYPE=TEXT>
+<NEXTBUTTON TARGET=0>I~nstall</NEXTBUTTON>
+<TEXT>
+Press "Install" to begin installing DocBook Framework for OS/2 v. 1.0.0 on your computer.
+</TEXT>
+</PAGE>
+
+</BODY>
+</WARPIN>
+
